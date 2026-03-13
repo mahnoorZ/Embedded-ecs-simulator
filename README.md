@@ -34,17 +34,15 @@ Qt Operator Dashboard
         ▼
    CAN Message Output
 
-   ```mermaid
+```mermaid
 flowchart TD
-
     A[Qt Operator Dashboard] --> B[Controller]
-
     B --> C[Sensor Manager]
     C --> D[Diagnostics Manager]
     D --> E[State Machine]
     E --> F[CAN Interface]
-
     F --> G[CAN Message Output]
+```
 
 The system runs in a continuous control loop similar to real embedded vehicle controllers.
 
