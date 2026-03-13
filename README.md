@@ -1,8 +1,6 @@
 # Vehicle ECS Simulator
 
-# Vehicle ECS Simulator
-
-![ECS Demo](docs/demo.gif)
+![ECS Demo](docs/demo.gif)cd
 
 A **C++17-based simulation of an industrial vehicle Electronic Control System (ECS)** designed to demonstrate common embedded software architecture used in automotive and heavy equipment systems.
 
@@ -15,18 +13,18 @@ The simulator is intended as a **demonstration of embedded systems design princi
 # System Overview
 
 The simulator models a simplified vehicle control system with the following components:
-Qt Operator Dashboard
-↓
-Controller
-↓
-Sensor Manager
-↓
-Diagnostics Manager
-↓
-State Machine
-↓
-CAN Interface
 
+```mermaid
+flowchart TD
+
+    A[Qt Operator Dashboard] --> B[Controller]
+
+    B --> C[Sensor Manager]
+    C --> D[Diagnostics Manager]
+    D --> E[State Machine]
+    E --> F[CAN Interface]
+
+    F --> G[CAN Message Output]
 
 The system runs in a continuous control loop similar to real embedded vehicle controllers.
 
