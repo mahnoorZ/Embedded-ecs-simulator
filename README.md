@@ -70,34 +70,6 @@ State transitions occur based on sensor inputs, operator commands, and diagnosti
 
 ```mermaid
 stateDiagram-v2
-    [*] --> OFF
-
-    OFF --> BOOT : Power On
-    BOOT --> IDLE : Init OK
-    BOOT --> FAULT : Init Failed
-
-    IDLE --> RUNNING : Start Command
-    IDLE --> OFF : Power Off
-
-    RUNNING --> WARNING : Non-critical Issue
-    RUNNING --> FAULT : Critical Fault
-    RUNNING --> EMERGENCY_STOP : E-Stop Pressed
-    RUNNING --> IDLE : Stop Command
-
-    WARNING --> RUNNING : Issue Cleared
-    WARNING --> FAULT : Fault Escalates
-    WARNING --> EMERGENCY_STOP : E-Stop Pressed
-    WARNING --> IDLE : Stop Command
-
-    FAULT --> IDLE : Fault Reset
-    FAULT --> OFF : Shutdown
-    FAULT --> EMERGENCY_STOP : E-Stop Pressed
-
-    EMERGENCY_STOP --> OFF : System Reset / Power Cycle
-```
-
-```mermaid
-stateDiagram-v2
     direction LR
 
     [*] --> OFF
