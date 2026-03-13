@@ -14,7 +14,27 @@ The simulator is intended as a **demonstration of embedded systems design princi
 
 The simulator models a simplified vehicle control system with the following components:
 
-```mermaid
+Qt Operator Dashboard
+        │
+        ▼
+     Controller
+        │
+        ▼
+   Sensor Manager
+        │
+        ▼
+ Diagnostics Manager
+        │
+        ▼
+    State Machine
+        │
+        ▼
+    CAN Interface
+        │
+        ▼
+   CAN Message Output
+
+   ```mermaid
 flowchart TD
 
     A[Qt Operator Dashboard] --> B[Controller]
@@ -39,13 +59,13 @@ A real-time control loop updates system state, evaluates diagnostics, and transm
 ### Finite State Machine
 
 The ECS state machine models typical vehicle operating states:
-OFF
-BOOT
-IDLE
-RUNNING
-WARNING
-FAULT
-EMERGENCY STOP
+- OFF
+- BOOT
+- IDLE
+- RUNNING
+- WARNING
+- FAULT
+- EMERGENCY STOP
 
 
 State transitions occur based on sensor inputs, operator commands, and diagnostics.
@@ -204,7 +224,3 @@ Possible extensions include:
 # License
 
 This project is intended for educational and demonstration purposes.
-
-## Dashboard
-
-![Dashboard](docs/dashboard.png)
