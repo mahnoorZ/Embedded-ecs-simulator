@@ -1,6 +1,6 @@
-# Vehicle ECS Simulator
+# Embedded ECS Simulator
 
-![ECS Demo](docs/demo.gif)cd
+![ECS Demo](docs/demo.gif)
 
 A **C++17-based simulation of an industrial vehicle Electronic Control System (ECS)** designed to demonstrate common embedded software architecture used in automotive and heavy equipment systems.
 
