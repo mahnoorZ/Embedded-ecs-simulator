@@ -14,6 +14,16 @@ public:
 
     void run();
 
+    const SensorData& getSensors() const;
+    ECSState getState() const;
+    void toggleIgnition();
+    void startEngine();
+    void emergencyStop();
+    void injectLowBattery();
+    void injectOverTemp();
+    void injectCommsFailure();
+    void clearFaults();
+
 private:
 
     SensorManager sensor_manager;

@@ -1,14 +1,48 @@
-# Build folders
+# =========================
+# Build directories
+# =========================
 build/
 cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+compile_commands.json
 
+# =========================
+# Object files / binaries
+# =========================
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+
+# =========================
+# Qt
+# =========================
+*.user
+*.autosave
+
+# =========================
 # macOS
+# =========================
 .DS_Store
 
+# =========================
 # Editors
+# =========================
 .vscode/
 .idea/
 
-# Compiled binaries
-*.o
-*.out
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary files
+# =========================
+*.swp
+*~

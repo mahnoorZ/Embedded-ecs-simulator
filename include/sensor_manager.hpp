@@ -12,10 +12,17 @@ public:
     void update();
 
     const SensorData& getSensors() const;
+    void injectLowBattery(bool enable);
+    void injectOverTemp(bool enable);
+    void injectCommsFailure(bool enable);
+    void clearFaults();
 
 private:
 
     SensorData sensors;
+    bool fault_low_battery = false;
+    bool fault_overtemp = false;
+    bool fault_comms = false;
 
 };
 
