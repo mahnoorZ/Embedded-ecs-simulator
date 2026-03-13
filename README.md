@@ -1,5 +1,9 @@
 # Vehicle ECS Simulator
 
+# Vehicle ECS Simulator
+
+![ECS Demo](docs/demo.gif)
+
 A **C++17-based simulation of an industrial vehicle Electronic Control System (ECS)** designed to demonstrate common embedded software architecture used in automotive and heavy equipment systems.
 
 This project simulates a simplified **vehicle ECU (Electronic Control Unit)** including system state management, diagnostics, CAN-style messaging, and an operator dashboard.
